@@ -1,0 +1,49 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.torres{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.torre{
+    height: 400px;
+    width: 20px;
+    background-color:black;
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+}
+
+#disco1{
+    width: 450px;
+    height: 70px;
+    background-color: brown;
+}
+
+#disco2{
+    width: 350px;
+    height: 70px;
+    background-color: rgb(44, 119, 51);
+}
+
+#disco3{
+    width: 250px;
+    height: 70px;
+    background-color: rgb(119, 73, 156);
+}
+#disco4{
+    width: 150px;
+    height: 70px;
+    background-color: rgb(64, 148, 243);
+}
+
+.disco{
+    border-radius: 10px;
+    border: solid 3px black;
+}
