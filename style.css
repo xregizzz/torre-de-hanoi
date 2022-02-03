@@ -1,49 +1,94 @@
 body{
-    height: 100vh;
+    background-color: cornsilk;
+}
+.main{
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .torres{
-    width: 700px;
+    width: 850px;
     display: flex;
     justify-content: space-between;
 }
 
 .torre{
-    height: 400px;
+    height: 300px;
     width: 20px;
     background-color:black;
     display: flex; 
     flex-direction: column-reverse; 
     align-items: center;
+    border-radius: 7px;
+}
+
+.disco{
+    border-radius: 20px;
+    border: solid 3px black;
+}
+
+#disco0{
+    width: 500px;
+    height: 50px;
+    background-color: rgb(228, 255, 78);
 }
 
 #disco1{
-    width: 450px;
-    height: 70px;
+    width: 400px;
+    height: 50px;
     background-color: brown;
 }
 
 #disco2{
-    width: 350px;
-    height: 70px;
+    width: 300px;
+    height: 50px;
     background-color: rgb(44, 119, 51);
 }
 
 #disco3{
-    width: 250px;
-    height: 70px;
+    width: 200px;
+    height: 50px;
     background-color: rgb(119, 73, 156);
 }
 #disco4{
-    width: 150px;
-    height: 70px;
+    width: 100px;
+    height: 50px;
     background-color: rgb(64, 148, 243);
 }
 
-.disco{
-    border-radius: 10px;
-    border: solid 3px black;
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive;
+    margin-top: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    margin-top: 50px;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 50px;
+}
+
+.niveis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    margin-top: 10px;
+}
+.resetButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    margin-top: 10px;
 }

@@ -10,29 +10,32 @@
   
 </head>
 <body>
-
-
-    <section class="torres">
-        <div class="torre" id="torre1">
-            <div class="disco" id="disco1"></div>
-            <div class="disco" id="disco2"></div>
-            <div class="disco" id="disco3"></div>
-            <div class="disco" id="disco4"></div>
-        </div>
+    <h1>Torre de Hanauer</h1>
+    <h2>Objetivo:<h2> 
+    <h3>Transpor todos os discos para uma das torres ao lado</h3>
+    <h2>Regras:</h2>
+    <h3>1: Apenas pode selecionar o disco que esta mais acima da torre</h3>
+    <h3>2: Não é permitido colocar um disco maior em cima de um disco menor</h3>
+    <h2>Como Jogar:</h2>
+    <h3>Clique no disco para seleciona lo e depois clique na torre para passar o disco</h3>
+    <main class="main" id="main">
         
+    </main>
+    <h2>Niveis</h2>
+    <div class="niveis">
+        <button id="nivel1">FÁCIL</button>
+        <button id="nivel2">MEDIO</button>
+        <button id="nivel3">DIFÍCIL</button>
+    </div>
 
-        <div class="torre" id="torre2">
-
-        </div>
-
-        <div class="torre" id="torre3">
-
-
-        </div>
-    </section>
-
-
-
+    <div class="caixaContador">
+        <h2>MOVIMENTOS</h2>
+        <h2 id="contador"></h2>
+    </div>
+    <div class="resetButton">
+        <button id="reset">RESETAR</button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
