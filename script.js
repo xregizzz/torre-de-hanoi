@@ -2,6 +2,7 @@ let disco = 0
 let jogadas = 0
 let discosReset = 0 
 
+let textoVitoria = document.getElementById("textoVitoria")
 let main = document.getElementById("main")
 main.addEventListener("click", selecionarDisco)
 main.addEventListener("click", receberDisco)
@@ -172,11 +173,11 @@ function receberDisco(event, discoAtual){
             contarJogadas()
             if(verificaVencerdor(torres[1].childElementCount) || verificaVencerdor(torres[2].childElementCount)){
                setTimeout(function(){
-                   window.alert("GANHOU MIZERAVI")
+                mostrarTextoDeVitoria()
                 }, 100)
                 setTimeout(function(){
                     resetarJogo()
-                 }, 100)
+                 }, 3500)
             }
         }
     }
@@ -194,6 +195,7 @@ function resetarJogo(){
     torres = document.querySelectorAll(".torre")
     contador.innerText = 0
     jogadas = 0
+    textoVitoria.innerHTML = ""
 }
 
 function verificaVencerdor(numeroDiscos){
@@ -226,4 +228,13 @@ function listarNivelDificil(){
     torres = document.getElementsByClassName("torre")
     disco = 0
 }
+
+function mostrarTextoDeVitoria(){
     
+const textoDeVitoria = document.createElement("h1")
+textoDeVitoria.classList.add("vitoria")
+textoDeVitoria.innerText = "PARABÉNS VOCÊ CONSEGUIU!!! UHUL COM APENAS " + jogadas + " JOGADAS"
+textoVitoria.appendChild(textoDeVitoria)
+}
+
+

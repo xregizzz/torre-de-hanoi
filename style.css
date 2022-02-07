@@ -100,7 +100,9 @@ p{
     margin-top: 10px;
     margin-bottom: 15px;
 }
-
+.vitoria{
+    color: red;
+}
 
 @media (max-width:600px){
     .torres{
