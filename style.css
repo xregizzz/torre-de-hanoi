@@ -30,30 +30,30 @@ body{
 }
 
 #disco0{
-    width: 500px;
+    width: 400px;
     height: 50px;
     background-color: rgb(228, 255, 78);
 }
 
 #disco1{
-    width: 400px;
+    width: 330px;
     height: 50px;
     background-color: brown;
 }
 
 #disco2{
-    width: 300px;
+    width: 270px;
     height: 50px;
     background-color: rgb(44, 119, 51);
 }
 
 #disco3{
-    width: 200px;
+    width: 210px;
     height: 50px;
     background-color: rgb(119, 73, 156);
 }
 #disco4{
-    width: 100px;
+    width: 140px;
     height: 50px;
     background-color: rgb(64, 148, 243);
 }
@@ -71,11 +71,11 @@ h2{
     font-family: cursive;
     margin-top: 50px;
 }
-h3{
+p{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-family: cursive;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .niveis{
@@ -85,10 +85,154 @@ h3{
     height: 25px;
     margin-top: 10px;
 }
+#nivel1{
+    margin-right: 10px;
+}
+#nivel2{
+    margin-right: 10px;
+}
+
 .resetButton{
     width: 100%;
     display: flex;
     justify-content: center;
     height: 25px;
     margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width:600px){
+    .torres{
+    width: 250px;
+    }
+    #disco0{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(228, 255, 78);
+    }
+    
+    #disco1{
+        width: 160px;
+        height: 50px;
+        background-color: brown;
+    }
+    
+    #disco2{
+        width: 120px;
+        height: 50px;
+        background-color: rgb(44, 119, 51);
+    }
+    
+    #disco3{
+        width: 90px;
+        height: 50px;
+        background-color: rgb(119, 73, 156);
+    }
+    #disco4{
+        width: 60px;
+        height: 50px;
+        background-color: rgb(64, 148, 243);
+    }
+}
+
+@media(min-width:601px) and (max-width:773px){
+    .torres{
+        width: 350px;
+        }
+        #disco0{
+            width: 250px;
+            height: 50px;
+            background-color: rgb(228, 255, 78);
+        }
+        
+        #disco1{
+            width: 190px;
+            height: 50px;
+            background-color: brown;
+        }
+        
+        #disco2{
+            width: 130px;
+            height: 50px;
+            background-color: rgb(44, 119, 51);
+        }
+        
+        #disco3{
+            width: 90px;
+            height: 50px;
+            background-color: rgb(119, 73, 156);
+        }
+        #disco4{
+            width: 60px;
+            height: 50px;
+            background-color: rgb(64, 148, 243);
+        }
+}
+@media(min-width:773px) and (max-width:1100px){
+    .torres{
+        width: 500px;
+        }
+        #disco0{
+            width: 285px;
+            height: 50px;
+            background-color: rgb(228, 255, 78);
+        }
+        
+        #disco1{
+            width: 230px;
+            height: 50px;
+            background-color: brown;
+        }
+        
+        #disco2{
+            width: 180px;
+            height: 50px;
+            background-color: rgb(44, 119, 51);
+        }
+        
+        #disco3{
+            width: 130px;
+            height: 50px;
+            background-color: rgb(119, 73, 156);
+        }
+        #disco4{
+            width: 90px;
+            height: 50px;
+            background-color: rgb(64, 148, 243);
+        }
+}
+
+@media(min-width:1100px) and (max-width:1300px){
+    .torres{
+        width: 700px;
+        }
+        #disco0{
+            width: 340px;
+            height: 50px;
+            background-color: rgb(228, 255, 78);
+        }
+        
+        #disco1{
+            width: 290px;
+            height: 50px;
+            background-color: brown;
+        }
+        
+        #disco2{
+            width: 230px;
+            height: 50px;
+            background-color: rgb(44, 119, 51);
+        }
+        
+        #disco3{
+            width: 180px;
+            height: 50px;
+            background-color: rgb(119, 73, 156);
+        }
+        #disco4{
+            width: 120px;
+            height: 50px;
+            background-color: rgb(64, 148, 243);
+        }
 }

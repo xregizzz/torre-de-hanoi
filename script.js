@@ -226,4 +226,4 @@ function listarNivelDificil(){
     torres = document.getElementsByClassName("torre")
     disco = 0
 }
-
+    
