@@ -1,4 +1,4 @@
-let disco = 0
+let disco = null
 let jogadas = 0
 let discosReset = 0 
 
@@ -6,6 +6,7 @@ let textoVitoria = document.getElementById("textoVitoria")
 let main = document.getElementById("main")
 main.addEventListener("click", selecionarDisco)
 main.addEventListener("click", receberDisco)
+
 
 function criarElementosNivelFacil(){
     const section = document.createElement("section")   
@@ -157,8 +158,12 @@ function selecionarDisco(event){
     const evento = event.target
     if(evento.className == "disco"){
         disco = event.target.parentElement.lastElementChild
-    }       
-}
+        disco.style.marginBottom = "10px"
+        }
+        else{
+            disco.style.marginBottom = "0px"
+        }   
+    }
 
 function receberDisco(event, discoAtual){
     const evento = event.target
@@ -181,7 +186,6 @@ function receberDisco(event, discoAtual){
             }
         }
     }
-    
 }
 
 function contarJogadas(){
@@ -191,6 +195,7 @@ function contarJogadas(){
 
 function resetarJogo(){
     let primeiraTorre = document.getElementById("torre1")
+    discosReset.forEach(elemento => elemento.classList.remove("selecionado"))
     discosReset.forEach(elemento => primeiraTorre.appendChild(elemento))
     torres = document.querySelectorAll(".torre")
     contador.innerText = 0
@@ -230,11 +235,10 @@ function listarNivelDificil(){
 }
 
 function mostrarTextoDeVitoria(){
-    
-const textoDeVitoria = document.createElement("h1")
-textoDeVitoria.classList.add("vitoria")
-textoDeVitoria.innerText = "PARABÉNS VOCÊ CONSEGUIU!!! UHUL COM APENAS " + jogadas + " JOGADAS"
-textoVitoria.appendChild(textoDeVitoria)
+    const textoDeVitoria = document.createElement("h1")
+    textoDeVitoria.classList.add("vitoria")
+    textoDeVitoria.innerText = `PARABÉNS VOCÊ CONSEGUIU UHUL!!! E COM APENAS ${jogadas} JOGADAS`
+    textoVitoria.appendChild(textoDeVitoria)
 }
 
 
