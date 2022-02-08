@@ -216,6 +216,7 @@ function listarNivelFacil(){
     discosReset = document.querySelectorAll(".disco")
     torres = document.getElementsByClassName("torre")
     disco = 0
+    resetarJogo()
 }
 
 function listarNivelMedio(){
@@ -224,6 +225,7 @@ function listarNivelMedio(){
     discosReset = document.querySelectorAll(".disco")
     torres = document.getElementsByClassName("torre")
     disco = 0
+    resetarJogo()
 }
 
 function listarNivelDificil(){
@@ -232,6 +234,7 @@ function listarNivelDificil(){
     discosReset = document.querySelectorAll(".disco")
     torres = document.getElementsByClassName("torre")
     disco = 0
+    resetarJogo()
 }
 
 function mostrarTextoDeVitoria(){
