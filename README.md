@@ -29,5 +29,5 @@
             <p>Nenhum disco pode ser colocado no topo de um disco menor.</p>
           </li>
         </ol>
-       
+       </article>
      Link para o jogo: https://kenzie-academy-brasil-developers.github.io/m2-entrega-torre-de-hanoi-sprint-1a-xregizzz/
